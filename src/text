@@ -1,0 +1,16 @@
+Dobry den,
+Chtel bych se Vas zeptat na server eva. Mam projekt z predmetu ISS v Pythonu. Muj kod funguje na pocitaci v vs codu, ale na serveru eva se neda spustit. Myslim si, ze tam nestaci nejake knihovny Pythonu.
+```
+File "Solution.py", line 2, in <module>
+    from matplotlib import pyplot as plt
+  File "/usr/local/lib/python3.7/site-packages/matplotlib/__init__.py", line 126, in <module>
+    from . import cbook
+  File "/usr/local/lib/python3.7/site-packages/matplotlib/cbook/__init__.py", line 2642, in <module>
+    class _StringFuncParser(object):
+  File "/usr/local/lib/python3.7/site-packages/matplotlib/cbook/__init__.py", line 2654, in _StringFuncParser
+    _funcs['quadratic'] = _FuncInfo(np.square,
+AttributeError: module 'numpy' has no attribute 'square'
+
+```
+Pouzivam knihovny numpy, matplotlib, scipy.io, scipy, random.
+Da se to nejak resit? protoze, pokud pravidelne tomu rozumim, projekt musi byt spustitelny na skolnich serverech
